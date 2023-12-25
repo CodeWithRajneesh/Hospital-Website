@@ -8,9 +8,7 @@
     <!-- <script src="script.js"></script>  -->
   </head>
   <body>
-    <div class="services">
-      <h3>Our Services</h3>
-    </div>
+  
     <div class="container">
             <div class="x1">
             <img
@@ -68,83 +66,58 @@
         </p>
       </div>
     </div>
-    <div class="slideshow-container">
+ <!--  gallery -->
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="image-slider-1.jpg" style="width:100%; height:400px">
-        <div class="text">Caption Text</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="image-slider-2.jpg" style="width:100%; height:400px">
-        <div class="text">Caption Two</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="image-slider-3.jpg" style="width:100%; height:400px">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="image-slider-4.jpg" style="width:100%; height:400px">
-        <div class="text">Caption four</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="image-slider-5.jpg" style="width:100%; height:400px">
-        <div class="text">Caption five</div>
-      </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="container3">
+      <div class="container2">
+      <div class="box">
+        <div class="bimg">
+        <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc5474.JPG" alt="">
+        <div  class ="title">Institute day</div>
     </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+      
+      <div class="box">
+        <div class="bimg">
+        <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc-0052-ch-1.jpg" alt="">
+        <div class ="title">Important Event/Visits </div>
+      </div>
     </div>
+      <div class="box">
+        <div class="bimg">
+        <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_photo01.jpg" alt="">
+        <div class ="title"> Vintage Photos</div>
+      </div>
+    </div>
+      <div class="box">
+        <div class="bimg">
+        <img src="https://www.aiims.edu/images/com_fwgallery/files/863/mid_dsc-8897.JPG" alt="">
+        <div class ="title"> AIIMS Swachatta</div>
+      
+      </div>
+    </div>
+      <div class="box">
+        <div class="bimg">
+        <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_aiims-entrance.JPG" alt=" ">
+        <div class ="title">AIIMS at a Glance</div>
+      </div>
+    </div>
+        <div class="box">
+          <div class="bimg">
+          <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_central-admission-and-railway-counter.JPG" alt=" ">
+          <div class ="title"> AIIMS View
+          </div>
+      </div>
+      </div>
+      <div class="owl">
+         <div class="owl-1"><a  class="previous1">&#8249;</a></div>
+         <div class="owl-2"><a  class="next1">&#8250;</a></div>
+      </div>
+    </div>
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
 
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
+    
   </body>
 </html>

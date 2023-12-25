@@ -24,6 +24,7 @@
     .x1,
     img{
          height: 200px;
+         cursor: pointer;
          width: 200px;
          transition: transform .2s;
     }
@@ -46,95 +47,129 @@
      .x1 img:hover{
         transform: scale(1.2);
      }
+   /*    middle */
+     .middle{
+      display: flex;
+      background-color: #bbb;
+     }
+     .three{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+     }
 
+       /*  gallery */
 
+       .container2{
+       
+        display: flex;
+        height: 472px;
+        width: 100%;
+        align-items: center;
+        margin-left: 20px;
+      
+       }
+       .container3{
+        background-color:#ffffff;
+        align-items: center;
+       }
+       
+       .box{    
+        cursor: pointer;
+        background-clip: content-box;
+        padding: 2px;
+        float: left;
+        color: #000000;
+        margin: 7px;
+        align-items: center;
+    }
 
-       /* #####  slider #####*/
+    .bimg {
+      cursor: pointer;
+      border: 5px solid rgb(212, 207, 183);
+      height: 330px;
+      width: 244px;
+      align-items: center;
+      background-color: #f2f2f2;
 
-       * {box-sizing:border-box}
+    }
+    .bimg img{
+      height: 255px;
+      width: 234px;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+   
+      .bimg:hover{
+        transform: scale(1.11);
+       
+        transition: transform .9s;
+      }
+      .title{
+        text-align: center;
+        font-weight: 700;  
+      }
+      .owl-1 a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      .owl-2 a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+    
+      
+      .owl-1 a:hover ,.owl-2 a:hover {
+        background-color: #ddddddc6;
+        color: black;
+      }
+      
+      .previous1 {
+        cursor: pointer;
+        position: absolute;
+        left: 10px;
+        background-color: #524578;
+        color: white;
+        border-radius: 50%;
+      }
+      
+      .next1 {
+        cursor: pointer;
+        background-color: #524578;
+        color: white;
+        border-radius: 50%;
+      }
+.dot1{
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color:#655e5b;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  align-items: center;
+  position: absolute;
+  left: 50.5%;
+
+}
+.dot2{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #655e5b;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  position: absolute;
+  left: 49.5%;
+
+}
+.dot1:hover{
+  background-color: #e6ede9;
+}
+.dot2:hover{
+  background-color: #e6ede9;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
